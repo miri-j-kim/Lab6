@@ -56,7 +56,7 @@ Description : API Usage.
                     const listItem = document.createElement('li');
                     let {name, id} = student;
                     listItem.textContent = name;
-                    listItem.addEventListener('click', () => {fetchCourses(id);console.log("hi")});
+                    listItem.onclick = () => fetchCourses(id);
                     studentList.appendChild(listItem);
                 });
                 
